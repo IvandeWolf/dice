@@ -1,0 +1,144 @@
+// DEMO SET-UP
+$col-1: #F44336
+$col-2: #E91E63
+$col-3: #9C27B0
+$col-4: #673AB7
+$col-5: #3F51B5
+$col-6: #2196F3
+
+/******************************
+ FLEXBOX STYLES
+ ******************************/
+
+// CENTERING OUR FACES
+.dice
+  display: flex
+  margin-top: 4rem
+  justify-content: center
+ 
+
+// OUR DICE FACES
+.face
+  display: flex
+  width: 3rem
+  height: 3rem
+  margin: 0 .7rem
+  padding: .5rem
+  border-radius: 5px
+  opacity: 1
+  .dot
+    width: .8rem
+    height: .8rem
+    background: $col-1
+    border-radius: 50% 
+  &:nth-child(1)
+    border: 2px solid $col-1
+    .dot
+      background: $col-1
+  &:nth-child(2)
+    border: 2px solid $col-2
+    .dot
+      background: $col-2
+  &:nth-child(3)
+    border: 2px solid $col-3
+    .dot
+      background: $col-3
+  &:nth-child(4)
+    border: 2px solid $col-4
+    .dot
+      background: $col-4
+  &:nth-child(5)
+    border: 2px solid $col-5
+    .dot
+      background: $col-5
+  &:nth-child(6)
+    border: 2px solid $col-6
+    .dot
+      background: $col-6
+// Vertical centering  
+.first-face
+  justify-content: center
+  align-items: center
+
+// Individual positioning (align-self)
+.second-face
+  justify-content: space-between
+  .dot:last-of-type
+    align-self: flex-end
+
+// More individual positioning
+.third-face
+  justify-content: space-between
+  .dot:nth-child(2)
+    align-self: center
+  .dot:last-of-type
+    align-self: flex-end
+    
+    
+// Nesting flex containers with different flex-direction
+.fourth-face
+  justify-content: space-between
+  .column
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+// more nesting  
+.fifth-face
+  justify-content: space-between
+  .column
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    &:nth-child(2)
+      justify-content: center
+
+// Again nesting
+.sixth-face
+  justify-content: space-between
+  .column
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+
+/*******************************************************/
+
+form
+    margin-top: 8px
+    margin-bottom: 8px
+
+button.mdc-button
+    width: 100%
+
+.mdc-card__primary
+    padding: 1em
+
+.mdc-card__title
+    margin: 0
+
+.mdc-card__subtitle
+    margin: 0
+    color: rgba(0, 0, 0, .54);
+    color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .54))
+
+.mdc-card__secondary
+    padding: 0 1rem 8px
+    color: rgba(0, 0, 0, .68)
+    color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .68))
+
+.mdc-text-field
+    margin-top: 8px
+
+.mdc-text-field-helper-line
+    margin-bottom: 8px
+
+
+// Ivan
+
+.mdc-layout-flexbox
+    display: flex
+    margin-bottom: 16px
+
+.mdc-layout-flexbox__centered
+    justify-content: center
