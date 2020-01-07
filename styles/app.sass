@@ -22,7 +22,7 @@ $col-6: #2196F3
   display: flex
   width: 3rem
   height: 3rem
-  margin: 0 .7rem
+  margin: .7rem
   padding: .5rem
   border-radius: 5px
   opacity: 1
@@ -105,40 +105,46 @@ $col-6: #2196F3
 /*******************************************************/
 
 form
-    margin-top: 8px
-    margin-bottom: 8px
+  margin-top: 8px
+  margin-bottom: 8px
 
 button.mdc-button
-    width: 100%
+  width: 100%
+
+.mdc-card
+  position: relative
 
 .mdc-card__primary
-    padding: 1em
+  padding: 1em
 
 .mdc-card__title
-    margin: 0
+  margin: 0
 
 .mdc-card__subtitle
-    margin: 0
-    color: rgba(0, 0, 0, .54);
-    color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .54))
+  margin: 0
+  color: rgba(0, 0, 0, .54)
+  color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .54))
+
+.mdc-card__menu
+  position: absolute
+  right: 16px
+  top: 16px
 
 .mdc-card__secondary
-    padding: 0 1rem 8px
-    color: rgba(0, 0, 0, .68)
-    color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .68))
+  padding: 0 1rem 8px
+  color: rgba(0, 0, 0, .68)
+  color: var(--mdc-theme-text-secondary-on-background, rgba(0, 0, 0, .68))
 
 .mdc-text-field
-    margin-top: 8px
+  margin-top: 8px
 
 .mdc-text-field-helper-line
-    margin-bottom: 8px
-
-
-// Ivan
+  margin-bottom: 8px
 
 .mdc-layout-flexbox
-    display: flex
-    margin-bottom: 16px
+  display: flex
+  margin-bottom: 16px
+  flex-wrap: wrap
 
 .mdc-layout-flexbox__centered
-    justify-content: center
+  justify-content: center

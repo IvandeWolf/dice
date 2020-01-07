@@ -4,7 +4,11 @@ let app = new Vue({
         title: 'Dice',
         subtitle: 'by Ivan de Wolf',
         n_dice: 2,
-        dice: [6, 6]
+        dice: [6, 6],
+        menu: null
+    },
+    mounted() {
+        this.menu = new mdc.menu.MDCMenu(document.querySelector('.mdc-menu'))
     },
     methods: {
         roll() {
@@ -12,6 +16,15 @@ let app = new Vue({
 
             for (let i = 0; i < this.n_dice; i++)
                 this.dice.splice(i, 1, Math.ceil(Math.random() * max_dice_face))
+        },
+        open() {
+            this.menu.open = true
+        },
+        select(value) {
+            this.n_dice = value
+            this.dice = new Array(this.n_dice)
+            
+            this.roll()
         }
     }
 })
