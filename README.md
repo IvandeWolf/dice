@@ -10,7 +10,7 @@ A little dice app for in the browser. It simulates throwing dice. Its for simple
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/dice/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/ivandewolf/dice/tags). 
 
 ## Authors
 
